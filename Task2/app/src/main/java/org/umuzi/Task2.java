@@ -8,7 +8,7 @@ public class Task2
     int y = (1+1)*2;
     int z = 1+(1*2);
     int a = 1+1*2/2;
-    int b = (1+1*2)/2;
+    double b = (1+1*2)/2.0;
     System.out.println(x);
     System.out.println(y);
     System.out.println(z);
