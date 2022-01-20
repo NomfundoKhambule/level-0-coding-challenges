@@ -5,7 +5,7 @@ public class Task10
 {
   static void commonLetters(String word1, String word2)
   {
-    Set<Character> sameLetters = new HashSet<Character>();
+    List<Character> sameLetters = new ArrayList<Character>();
     char[] charArray1 = word1.toLowerCase().toCharArray();
     char[] charArray2 = word2.toLowerCase().toCharArray();
     System.out.print("Common letters: ");
@@ -15,7 +15,7 @@ public class Task10
       {
         if(charArray1[i]==charArray2[j])
         {
-          sameLetters.add(charArray2[j]);
+          sameLetters.add(charArray1[i]);
         }
       }
       
@@ -37,6 +37,6 @@ public class Task10
   
   public static void main(String[] args) 
   {
-    commonLetters("house","computers");
+    commonLetters("computers","house");
   }
 }
